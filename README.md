@@ -8,5 +8,5 @@ These are our technical goals for this project:
 - Deploy the LLM on cloud
 - Deploy Chatbot application created using LangChain
 - Apply Object-Oriented Design Principles to enhance code quality and maintainability for critical scripts (eg: Benchmarking Script)
-- Create workflow for data augmentation to make our own dataset for fine-tuning
+- Create an orchestration workflow to augment data and build a custom dataset for fine-tuning
 ## Setup Instruction
