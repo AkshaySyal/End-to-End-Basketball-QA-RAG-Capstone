@@ -13,7 +13,8 @@ These are our technical goals for this project:
 ## To run the chatbotapp
 1. Clone the repository to your local machine:
    ```bash
-   git clone <https://github.com/rahimunisa01/RMarkdown.git>
+   git clone <repository-url>
+   cd End-to-End-Basketball-QA-RAG-Capstone
 2. Switch to the Chatbot branch
    ```bash
    git checkout chatbotapp
