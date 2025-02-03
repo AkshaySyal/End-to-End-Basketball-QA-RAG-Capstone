@@ -1,0 +1,7 @@
+openai
+langchain
+langchain-experimental
+python-dotenv
+streamlit
+huggingface_hub
+sqlalchemy
