@@ -31,6 +31,6 @@ These are our technical goals for this project:
    OPENAI_API_KEY=your_openai_api_key_here
    HUGGINGFACE_API_TOKEN=your_huggingface_token_here
    DATABASE_PATH=path/to/your/database.db
-7. To run the streamlit application
+6. To run the streamlit application
    ```bash
    streamlit run chatbotapp/app.py
