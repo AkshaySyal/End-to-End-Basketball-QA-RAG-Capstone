@@ -26,11 +26,11 @@ These are our technical goals for this project:
    ```bash
    pip install -r chatbotapp/requirements.txt
 5. Add your api key, hugging face token and database path(sqlite database path)
+   Create a .env file in chatbotapp/ and add:
    ```bash
    OPENAI_API_KEY=your_openai_api_key_here
    HUGGINGFACE_API_TOKEN=your_huggingface_token_here
    DATABASE_PATH=path/to/your/database.db
-6. To run the streamlit application
+7. To run the streamlit application
    ```bash
    streamlit run chatbotapp/app.py
-2. 
