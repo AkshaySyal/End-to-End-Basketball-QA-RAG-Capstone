@@ -46,5 +46,5 @@ def main():
             st.write(response)
         st.session_state.chat_history.append({"role": "assistant", "content": response})
 
-if __name__== "_main_":
+if __name__== "__main__":
     main()
