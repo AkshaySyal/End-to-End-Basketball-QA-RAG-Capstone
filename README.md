@@ -1,14 +1,24 @@
 # End-to-End-Basketball-QA-RAG-Capstone
 
-## Purpose
+## Project description
 This project aims to democratize basketball analytics by addressing the challenges non-technical users face when working with complex datasets due to limited SQL expertise. By developing a fine-tuned LLM-powered system, the project simplifies SQL query generation, ensuring accurate and consistent data-driven insights. The ultimate goal is to make analytics accessible, enabling better coaching strategies, player evaluations, and fan engagement while tackling key issues like LLM hallucinations and inconsistencies.
-## Goal 
+## Purpose 
 These are our technical goals for this project:
 - Fine-tune an open-source LLM for generating semantically correct SQL queries to answer Analytics Queries
 - Deploy the LLM on cloud
 - Deploy Chatbot application created using LangChain
 - Apply Object-Oriented Design Principles to enhance code quality and maintainability for critical scripts (eg: Benchmarking Script)
 - Create an orchestration workflow to augment data and build a custom dataset for fine-tuning
+## Dataset details and link
+There are 2 types of data
+- NBA Database: Contains personal and professional attributes of NBA players. It is a SQLite Database consisting of 16 tables, 2.33 GBs of data, and is updated daily.
+Link: https://www.kaggle.com/datasets/wyattowalsh/basketball
+
+- QA Dataset: Contains basketball questions, their corresponding SQL queries and answers in a natural conversational tone. We collected this dataset from an online course, Improving Accuracy of LLM Applications from DeepLearning.ai. The dataset was specifically generated to fine-tune an LLM to accurately translate user basketball queries to SQL queries. Test set consists of 40 QA pairs while Training set consists of 313 QA pairs.
+Links
+- - https://github.com/AkshaySyal/End-to-End-Basketball-QA-RAG-Capstone/blob/main/data/test%20data/gold-test-set-v2.jsonl
+- - https://github.com/AkshaySyal/End-to-End-Basketball-QA-RAG-Capstone/blob/main/data/train%20data/generated_queries_large_filtered.jsonl
+
 ## Setup Instruction
 ## To run the chatbotapp
 1. Clone the repository to your local machine:
