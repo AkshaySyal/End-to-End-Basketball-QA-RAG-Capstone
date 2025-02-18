@@ -72,3 +72,16 @@ I explored 2 ways to host the LLM
            "prompt": "write me 300 word essay on AI",
            "stream": false
          }'
+
+## Model Training
+Install the following libraries:
+- !pip install unsloth
+- !pip uninstall unsloth -y && pip install --upgrade --no-cache-dir --no-deps git+https://github.com/unslothai/unsloth.git@nightly git+https://github.com/unslothai/unsloth-zoo.git
+- !pip install bitsandbytes
+- !pip install accelerate
+- !pip install --upgrade transformers
+- !pip install --upgrade peft
+- !pip install --upgrade datasets
+- !pip install trl
+- !pip install unsloth
+
