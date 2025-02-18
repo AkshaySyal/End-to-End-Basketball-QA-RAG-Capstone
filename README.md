@@ -44,3 +44,31 @@ Links
 6. To run the streamlit application
    ```bash
    streamlit run chatbotapp/app.py
+
+## Hosting the model
+I explored 2 ways to host the LLM
+1. SageMaker JumpStart
+   I used Jumpstart in SageMaker Studio to create endpoint for Llama-3.2-instruct. Notebook: https://github.com/AkshaySyal/End-to-End-Basketball-QA-RAG-Capstone/blob/infra/Inference%20Llama%203.2-3B%20SageMaker.ipynb
+2. Ollama + ngrok
+   To host the model without incurring cost for cloud computing I use Ollama to run Llama models locally on my laptop and convert my laptop into a server and expose a public URL using ngrok.
+   - Download Ollama: https://ollama.com/download
+   - Setting up ollama
+   ```bash
+   ollama pull llama3.2:3b
+   ollama serve
+   ```
+   - Setting up ngrok
+   ```bash
+   brew install ngrok
+   ```
+   - Create free account on ngrok website to get auth_token: https://dashboard.ngrok.com/
+   ```bash
+   ngrok config add-authtoken <auth_token>
+   ngrok http 11434 --host-header=localhost
+   curl -X POST "https://03ce-2601-19b-481-1350-d10b-adec-1ef5-49b4.ngrok-free.app/api/generate" \
+     -H "Content-Type: application/json" \
+     -d '{
+           "model": "llama3.2",
+           "prompt": "write me 300 word essay on AI",
+           "stream": false
+         }'
