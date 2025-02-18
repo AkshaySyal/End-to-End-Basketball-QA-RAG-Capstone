@@ -1,0 +1,152 @@
+question,generated_sql,expected_sql,generated_result,expected_result,syntax_correct,semantics_correct
+Who is the pointguard for the Golden State Warriors?,SELECT NAME FROM nba_roster WHERE TEAM = 'Golden State Warriors' AND POS = 'PG';,select name from nba_roster where team='Golden State Warriors' and POS='PG';,"            NAME
+0  Stephen Curry
+1    Cory Joseph","            NAME
+0  Stephen Curry
+1    Cory Joseph",True,True
+What is the number of players on the Chicago Bulls who are 25 years old or younger,SELECT COUNT(*) FROM nba_roster WHERE Team = 'Chicago Bulls' AND AGE < 25;,SELECT COUNT(*) FROM nba_roster WHERE team='Chicago Bulls' AND AGE <= 25;,"   COUNT(*)
+0         5","   COUNT(*)
+0         7",True,False
+Who is the highest-paid player on the Los Angeles Lakers,"SELECT NAME, SALARY FROM nba_roster WHERE TEAM = 'Los Angeles Lakers' ORDER BY SALARY DESC LIMIT 1;","SELECT NAME, SALARY FROM nba_roster WHERE team='Los Angeles Lakers' ORDER BY CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER) DESC LIMIT 1;","            NAME       SALARY
+0  Anthony Davis  $40,600,080","            NAME       SALARY
+0  Anthony Davis  $40,600,080",True,True
+Who is the highest paid player in the NBA?,SELECT MAX(SALARY) FROM nba_roster;,"SELECT NAME, salary FROM nba_roster WHERE SALARY!= '--' ORDER BY CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER) DESC LIMIT 1;","  MAX(SALARY)
+0  $9,945,830","            NAME       SALARY
+0  Stephen Curry  $51,915,615",True,False
+What team is LaMelo Ball on?,SELECT Team FROM nba_roster WHERE NAME = 'LaMelo Ball';,select team from nba_roster where name='LaMelo Ball';,"Empty DataFrame
+Columns: [Team]
+Index: []","Empty DataFrame
+Columns: [Team]
+Index: []",True,True
+How much does Lonzo Ball weigh?,SELECT WT FROM nba_roster WHERE NAME = 'Lonzo Ball';,select wt from nba_roster where name='Lonzo Ball';,"        WT
+0  190 lbs","        WT
+0  190 lbs",True,True
+What college sent the most players to the current NBA?,,select college from nba_roster where college != '--'  group by college order by count(*) desc limit 1;,,"    COLLEGE
+0  Kentucky",False,False
+How old is Lebron James?,SELECT AGE FROM nba_roster WHERE NAME = 'Lebron James';,select age from nba_roster where name='LeBron James';,"Empty DataFrame
+Columns: [AGE]
+Index: []","Empty DataFrame
+Columns: [AGE]
+Index: []",True,True
+What is the most popular jersey number in the current NBA?,SELECT Jersey FROM nba_roster GROUP BY Jersey ORDER BY COUNT(*) DESC LIMIT 1;,select Jersey from nba_roster where Jersey != 'NA' group by Jersey order by count(*) desc limit 1;,"  Jersey
+0      5","  Jersey
+0      5",True,True
+Can you give me a list of all the players without college data?,SELECT * FROM nba_roster WHERE COLLEGE IS NULL;,SELECT name FROM nba_roster WHERE COLLEGE IS NULL OR COLLEGE = '--';,"Empty DataFrame
+Columns: [Team, NAME, Jersey, POS, AGE, HT, WT, COLLEGE, SALARY]
+Index: []","Empty DataFrame
+Columns: [NAME]
+Index: []",True,False
+What team has the smallest roster?,"SELECT Team, COUNT(*) as num FROM nba_roster GROUP BY Team ORDER BY num LIMIT 1;",select team from nba_roster group by team order by count(*) asc limit 1;,"              Team  num
+0  Houston Rockets    5","              Team
+0  Houston Rockets",True,False
+What team has the largest roster?,"SELECT Team, COUNT(*) as total_players FROM nba_roster GROUP BY Team ORDER BY total_players DESC LIMIT 1;","select team, count(*) from nba_roster group by team order by count(*) desc limit 1;","              Team  total_players
+0  Toronto Raptors             26","              Team  count(*)
+0  Toronto Raptors        26",True,False
+What team is paying its players the most in total?,,"select team, sum(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) from nba_roster group by team order by sum(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) desc limit 1;",,"              Team  \
+0  Toronto Raptors   
+
+   sum(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER))  
+0                                          290505894                ",False,False
+Which team is paying its players the least?,SELECT TEAM FROM nba_roster ORDER BY SALARY LIMIT 1;,"select team from nba_roster group by team order by sum(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) asc limit 1;","                 Team
+0  Los Angeles Lakers","              Team
+0  Houston Rockets",True,False
+Which team is on average the tallest?,,"select team, AVG(CAST(SUBSTR(HT, 1, INSTR(HT,' ')-1) AS INTEGER)+ CAST(SUBSTR(HT, INSTR(HT,' ')+1) AS FLOAT)/12) as height from nba_roster group by team order by height desc limit 1;",,"              Team    height
+0  Toronto Raptors  6.634615",False,False
+Which team is on average the shortest?,,"select team, AVG(CAST(SUBSTR(HT, 1, INSTR(HT,' ')-1) AS INTEGER)+ CAST(SUBSTR(HT, INSTR(HT,' ')+1) AS FLOAT)/12) as height from nba_roster group by team order by height asc limit 1;",,"                    Team    height
+0  Golden State Warriors  6.416667",False,False
+Who are the tallest 5 centers in the league?,,"SELECT name, HT FROM nba_roster WHERE POS = 'C' ORDER BY HT DESC LIMIT 5;",,"               NAME     HT
+0       Luke Kornet  7' 2""
+1  Dereck Lively II  7' 1""
+2          Alex Len  7' 1""
+3      Jakob Poeltl  7' 1""
+4      Jakob Poeltl  7' 1""",False,False
+Who are the top 5 highest paid power forwards in the league?,"SELECT NAME, SALARY FROM nba_roster WHERE POS = 'PF' ORDER BY SALARY DESC LIMIT 5;","SELECT NAME, salary FROM nba_roster WHERE POS = 'PF' AND SALARY!= '--' ORDER BY CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER) DESC LIMIT 5;","               NAME      SALARY
+0  Patrick Williams  $9,835,881
+1        Jeff Green  $9,600,000
+2     Royce O'Neale  $9,500,000
+3  Jabari Smith Jr.  $9,326,520
+4       Evan Mobley  $8,882,760","            NAME       SALARY
+0   Kevin Durant  $47,649,433
+1  Anthony Davis  $40,600,080
+2  Tobias Harris  $39,270,150
+3  Pascal Siakam  $37,893,408
+4  Pascal Siakam  $37,893,408",True,False
+What is the median salary in the NBA?,,"SELECT (CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as percentile FROM nba_roster WHERE SALARY!= '--' order by percentile limit 1 offset (select count(*) from nba_roster where SALARY != '--')*50/100-1;",,"   percentile
+0     7252080",False,False
+What is the average salary in the NBA?,,"SELECT avg(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as percentile FROM nba_roster WHERE SALARY!= '--';",,"     percentile
+0  1.175886e+07",False,False
+What is the 99th percentile salary in the NBA?,SELECT SALARY FROM nba_roster ORDER BY SALARY DESC LIMIT 1;,"SELECT (CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as percentile FROM nba_roster WHERE SALARY!= '--' order by percentile limit 1 offset (select count(*) from nba_roster where SALARY != '--')*99/100-1;","       SALARY
+0  $9,945,830","   percentile
+0    45640084",True,False
+What is the 75th percentile salary in the NBA?,SELECT SALARY FROM nba_roster ORDER BY SALARY DESC LIMIT 1;,"SELECT (CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as percentile FROM nba_roster WHERE SALARY!= '--' order by percentile limit 1 offset (select count(*) from nba_roster where SALARY != '--')*75/100-1;","       SALARY
+0  $9,945,830","   percentile
+0    17259999",True,False
+What is the 25th percentile salary in the NBA?,SELECT SALARY FROM nba_roster ORDER BY SALARY LIMIT 1 OFFSET 24;,"SELECT (CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as percentile FROM nba_roster WHERE SALARY!= '--' order by percentile limit 1 offset (select count(*) from nba_roster where SALARY != '--')*25/100-1;","       SALARY
+0  $1,927,896","   percentile
+0     2733360",True,False
+What is the median weight in the NBA?,,"select CAST(SUBSTR(WT, 1, INSTR(WT,' ')) as INTEGER) as percentile from nba_roster order by percentile limit 1 offset (select count(*) from nba_roster)*50/100-1;",,"   percentile
+0         215",False,False
+What is the average weight in the NBA?,,"SELECT AVG(CAST(SUBSTR(WT, 1, INSTR(WT,' ')) as INTEGER)) FROM nba_roster;",,"   AVG(CAST(SUBSTR(WT, 1, INSTR(WT,' ')) as INTEGER))
+0                                         216.380805 ",False,False
+What is the median height in the NBA?,"SELECT AVG(STRFTIME('%I', SUBSTR(HT, 2))) AS median_height FROM nba_roster GROUP BY POS ORDER BY median_height DESC LIMIT 1;","select CAST(SUBSTR(HT, 1, INSTR(HT,' ')-1) AS INTEGER)+ CAST(SUBSTR(HT, INSTR(HT,' ')+1) AS FLOAT)/12 as percentile from nba_roster order by percentile limit 1 offset (select count(*) from nba_roster)*50/100-1;","  median_height
+0          None","   percentile
+0         6.5",True,False
+What is the average height in the NBA?,SELECT AVG(T2.HT) FROM nba_roster AS T1 INNER JOIN (SELECT HT FROM nba_roster) AS T2;,"select AVG(CAST(SUBSTR(HT, 1, INSTR(HT,' ')-1) AS INTEGER)+ CAST(SUBSTR(HT, INSTR(HT,' ')+1) AS FLOAT)/12) as height from nba_roster;","   AVG(T2.HT)
+0    6.068111","    height
+0  6.55031",True,False
+Can you tell me how many players are in the NBA?,SELECT COUNT(*) FROM nba_roster;,select count(*) from nba_roster;,"   COUNT(*)
+0       323","   count(*)
+0       323",True,False
+Would you please let me know what the highest paid players are for each position?,"SELECT NAME, POS, SALARY FROM nba_roster GROUP BY POS ORDER BY MAX(SALARY) LIMIT 1;","SELECT name, pos, MAX(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as max_salary FROM nba_roster WHERE SALARY!= '--' GROUP BY POS;","            NAME POS      SALARY
+0  Cason Wallace   G  $5,291,000","            NAME POS  max_salary
+0    Joel Embiid   C    46900000
+1    Paul George   F    45640084
+2  Norman Powell   G    18000000
+3   Kevin Durant  PF    47649433
+4  Stephen Curry  PG    51915615
+5  Kawhi Leonard  SF    45640084
+6  Klay Thompson  SG    43219440",True,False
+Is Jalen Johnson 23 years old?,SELECT AGE FROM nba_roster WHERE NAME = 'Jalen Johnson';,"Select name, age from nba_roster where name='Jalen Johnson';","   AGE
+0   21","            NAME  AGE
+0  Jalen Johnson   21",True,False
+Who is the oldest player on the Brooklyn Nets?,SELECT MAX(AGE) FROM nba_roster WHERE Team = 'Brooklyn Nets';,SELECT NAME FROM nba_roster WHERE TEAM = 'Brooklyn Nets' AND AGE = (SELECT MAX(AGE) FROM nba_roster WHERE TEAM = 'Brooklyn Nets');,"   MAX(AGE)
+0        30","                  NAME
+0    Spencer Dinwiddie
+1  Dorian Finney-Smith
+2        Royce O'Neale",True,False
+Who has the higest salary on the Memphis Grizzlies?,SELECT MAX(SALARY) FROM nba_roster WHERE Team = 'Memphis Grizzlies';,"select salary, name from nba_roster where team='Memphis Grizzlies' and SALARY!= '--' ORDER BY CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER) DESC LIMIT 1;","  MAX(SALARY)
+0  $4,810,200","        SALARY       NAME
+0  $34,005,250  Ja Morant",True,False
+Which player has the higest salary on the Cleveland Cavaliers?,"SELECT NAME, SALARY FROM nba_roster WHERE Team = 'Cleveland Cavaliers' ORDER BY SALARY DESC LIMIT 1;","select salary, name from nba_roster where team='Cleveland Cavaliers' and SALARY!= '--' ORDER BY CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER) DESC LIMIT 1;","          NAME      SALARY
+0  Isaac Okoro  $8,920,795","        SALARY            NAME
+0  $34,005,250  Darius Garland",True,False
+Who is the highest paid center on the Dallas Mavericks?,SELECT NAME FROM nba_roster WHERE COLLEGE = 'UCLA' AND TEAM = 'Dallas Mavericks' ORDER BY SALARY DESC LIMIT 1;,"select salary, name from nba_roster where team='Dallas Mavericks' and POS='C' and SALARY!= '--' ORDER BY CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER) DESC LIMIT 1;","Empty DataFrame
+Columns: [NAME]
+Index: []","       SALARY              NAME
+0  $4,775,640  Dereck Lively II",True,False
+How much is Marcus Smart getting paid?,,select salary from nba_roster where name='Marcus Smart';,,"Empty DataFrame
+Columns: [SALARY]
+Index: []",False,False
+What's the average age of the Trail Blazers?,SELECT AVG(AGE) FROM nba_roster WHERE Team = 'Trail Blazers';,select avg(age) from nba_roster where team='Portland Trail Blazers';,"  AVG(AGE)
+0     None","    avg(age)
+0  24.444444",True,False
+What's the median age of the NBA?,SELECT AVG(AGE) FROM nba_roster;,select CAST(AGE as INTEGER) as percentile from nba_roster order by percentile limit 1 offset (select count(*) from nba_roster)*50/100-1;,"    AVG(AGE)
+0  26.136223","   percentile
+0          25",True,False
+What's the median age of the Miami Heat?,SELECT AVG(AGE) FROM nba_roster WHERE Team = 'Miami Heat';,select CAST(AGE as INTEGER) as percentile from nba_roster where team='Miami Heat' order by percentile limit 1 offset (select count(*) from nba_roster where team='Miami Heat')*50/100-1;,"   AVG(AGE)
+0      28.6","   percentile
+0          26",True,False
+What are the 5 teams with the oldest average age in the NBA,"SELECT Team, AVG(AGE) AS avg_age FROM nba_roster GROUP BY Team ORDER BY avg_age DESC LIMIT 5;","SELECT team, AVG(AGE) AS average_age FROM nba_roster GROUP BY team ORDER BY average_age DESC LIMIT 5;","                    Team    avg_age
+0  Golden State Warriors  29.875000
+1        Milwaukee Bucks  29.666667
+2            LA Clippers  29.000000
+3     Philadelphia 76ers  28.818182
+4             Miami Heat  28.600000","                    Team  average_age
+0  Golden State Warriors    29.875000
+1        Milwaukee Bucks    29.666667
+2            LA Clippers    29.000000
+3     Philadelphia 76ers    28.818182
+4             Miami Heat    28.600000",True,False
+What is the average salary of Power Forward players in the NBA,SELECT AVG(SALARY) FROM nba_roster WHERE POS = 'PF';,"select avg(CAST(REPLACE(REPLACE(SALARY, '$', ''), ',','') AS INTEGER)) as average_salary from nba_roster where POS = 'PF';","   AVG(SALARY)
+0          0.0","   average_salary
+0    1.299885e+07",True,False
