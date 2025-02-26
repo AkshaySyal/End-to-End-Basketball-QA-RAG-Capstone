@@ -1,0 +1,38 @@
+[2025-02-12T00:34:23.522+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-12T00:34:23.552+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_s3_pipeline.upload_to_s3 manual__2025-02-12T00:34:17.802703+00:00 [queued]>
+[2025-02-12T00:34:23.565+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_s3_pipeline.upload_to_s3 manual__2025-02-12T00:34:17.802703+00:00 [queued]>
+[2025-02-12T00:34:23.565+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-02-12T00:34:23.582+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): upload_to_s3> on 2025-02-12 00:34:17.802703+00:00
+[2025-02-12T00:34:23.610+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=120) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-12T00:34:23.613+0000] {standard_task_runner.py:72} INFO - Started process 121 to run task
+[2025-02-12T00:34:23.614+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_s3_pipeline', 'upload_to_s3', 'manual__2025-02-12T00:34:17.802703+00:00', '--job-id', '84', '--raw', '--subdir', 'DAGS_FOLDER/s3_data.py', '--cfg-path', '/tmp/tmp78zc6ddl']
+[2025-02-12T00:34:23.619+0000] {standard_task_runner.py:105} INFO - Job 84: Subtask upload_to_s3
+[2025-02-12T00:34:23.702+0000] {task_command.py:467} INFO - Running <TaskInstance: kaggle_to_s3_pipeline.upload_to_s3 manual__2025-02-12T00:34:17.802703+00:00 [running]> on host 51b0f195f11f
+[2025-02-12T00:34:23.802+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_s3_pipeline' AIRFLOW_CTX_TASK_ID='upload_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T00:34:17.802703+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-12T00:34:17.802703+00:00'
+[2025-02-12T00:34:23.806+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-12T00:34:23.834+0000] {s3_data.py:50} INFO - Uploading CSV files from /opt/***/data/csv to S3 bucket capstone***
+[2025-02-12T00:34:24.887+0000] {s3_data.py:65} INFO - Uploading play_by_play.csv to capstone*** at nba_data/csv/play_by_play.csv
+[2025-02-12T00:36:56.457+0000] {s3_data.py:65} INFO - Uploading game_info.csv to capstone*** at nba_data/csv/game_info.csv
+[2025-02-12T00:36:56.850+0000] {s3_data.py:65} INFO - Uploading player.csv to capstone*** at nba_data/csv/player.csv
+[2025-02-12T00:36:56.998+0000] {s3_data.py:65} INFO - Uploading team_history.csv to capstone*** at nba_data/csv/team_history.csv
+[2025-02-12T00:36:57.062+0000] {s3_data.py:65} INFO - Uploading team_info_common.csv to capstone*** at nba_data/csv/team_info_common.csv
+[2025-02-12T00:36:57.127+0000] {s3_data.py:65} INFO - Uploading inactive_players.csv to capstone*** at nba_data/csv/inactive_players.csv
+[2025-02-12T00:36:57.856+0000] {s3_data.py:65} INFO - Uploading other_stats.csv to capstone*** at nba_data/csv/other_stats.csv
+[2025-02-12T00:36:58.255+0000] {s3_data.py:65} INFO - Uploading officials.csv to capstone*** at nba_data/csv/officials.csv
+[2025-02-12T00:36:58.513+0000] {s3_data.py:65} INFO - Uploading game_summary.csv to capstone*** at nba_data/csv/game_summary.csv
+[2025-02-12T00:36:59.074+0000] {s3_data.py:65} INFO - Uploading draft_combine_stats.csv to capstone*** at nba_data/csv/draft_combine_stats.csv
+[2025-02-12T00:36:59.199+0000] {s3_data.py:65} INFO - Uploading team_details.csv to capstone*** at nba_data/csv/team_details.csv
+[2025-02-12T00:36:59.271+0000] {s3_data.py:65} INFO - Uploading draft_history.csv to capstone*** at nba_data/csv/draft_history.csv
+[2025-02-12T00:36:59.446+0000] {s3_data.py:65} INFO - Uploading line_score.csv to capstone*** at nba_data/csv/line_score.csv
+[2025-02-12T00:37:00.455+0000] {s3_data.py:65} INFO - Uploading common_player_info.csv to capstone*** at nba_data/csv/common_player_info.csv
+[2025-02-12T00:37:00.676+0000] {s3_data.py:65} INFO - Uploading team.csv to capstone*** at nba_data/csv/team.csv
+[2025-02-12T00:37:00.736+0000] {s3_data.py:65} INFO - Uploading game.csv to capstone*** at nba_data/csv/game.csv
+[2025-02-12T00:37:02.190+0000] {s3_data.py:68} INFO - All CSV files uploaded successfully.
+[2025-02-12T00:37:02.198+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-12T00:37:02.368+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-12T00:37:02.373+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=kaggle_to_s3_pipeline, task_id=upload_to_s3, run_id=manual__2025-02-12T00:34:17.802703+00:00, execution_date=20250212T003417, start_date=20250212T003423, end_date=20250212T003702
+[2025-02-12T00:37:02.596+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-12T00:37:02.797+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-12T00:37:02.799+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

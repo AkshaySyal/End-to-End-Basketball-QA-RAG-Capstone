@@ -1,0 +1,5 @@
+apache-airflow
+apache-airflow-providers-mysql
+mysql-connector-python
+boto3
+

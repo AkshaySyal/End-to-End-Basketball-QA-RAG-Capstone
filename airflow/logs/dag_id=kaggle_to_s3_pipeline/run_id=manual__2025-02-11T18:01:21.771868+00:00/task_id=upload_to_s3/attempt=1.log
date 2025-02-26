@@ -1,0 +1,22 @@
+[2025-02-11T18:01:30.420+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-11T18:01:30.472+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_s3_pipeline.upload_to_s3 manual__2025-02-11T18:01:21.771868+00:00 [queued]>
+[2025-02-11T18:01:30.486+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_s3_pipeline.upload_to_s3 manual__2025-02-11T18:01:21.771868+00:00 [queued]>
+[2025-02-11T18:01:30.487+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-02-11T18:01:30.534+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): upload_to_s3> on 2025-02-11 18:01:21.771868+00:00
+[2025-02-11T18:01:30.543+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=104) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-11T18:01:30.547+0000] {standard_task_runner.py:72} INFO - Started process 108 to run task
+[2025-02-11T18:01:30.559+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_s3_pipeline', 'upload_to_s3', 'manual__2025-02-11T18:01:21.771868+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/s3_data.py', '--cfg-path', '/tmp/tmp02nd04nc']
+[2025-02-11T18:01:30.565+0000] {standard_task_runner.py:105} INFO - Job 24: Subtask upload_to_s3
+[2025-02-11T18:01:30.677+0000] {task_command.py:467} INFO - Running <TaskInstance: kaggle_to_s3_pipeline.upload_to_s3 manual__2025-02-11T18:01:21.771868+00:00 [running]> on host 3aae20995624
+[2025-02-11T18:01:30.907+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_s3_pipeline' AIRFLOW_CTX_TASK_ID='upload_to_s3' AIRFLOW_CTX_EXECUTION_DATE='2025-02-11T18:01:21.771868+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-11T18:01:21.771868+00:00'
+[2025-02-11T18:01:30.908+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-11T18:01:31.220+0000] {s3_data.py:28} INFO - Uploading nba.sqlite to S3 bucket None at nba_data/nba.sqlite
+[2025-02-11T18:01:33.324+0000] {s3_data.py:39} ERROR - Error uploading to S3: expected string or bytes-like object, got 'NoneType'
+[2025-02-11T18:01:33.328+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-11T18:01:33.376+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-11T18:01:33.377+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=kaggle_to_s3_pipeline, task_id=upload_to_s3, run_id=manual__2025-02-11T18:01:21.771868+00:00, execution_date=20250211T180121, start_date=20250211T180130, end_date=20250211T180133
+[2025-02-11T18:01:33.483+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-11T18:01:33.563+0000] {taskinstance.py:3901} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-11T18:01:33.566+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,182 @@
+[2025-02-12T00:33:15.175+0000] {processor.py:186} INFO - Started process (PID=87) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:33:15.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:33:15.188+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:15.187+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:33:15.497+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:33:15.735+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:15.734+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:33:15.791+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:15.790+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:33:15.860+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.707 seconds
+[2025-02-12T00:33:46.087+0000] {processor.py:186} INFO - Started process (PID=94) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:33:46.089+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:33:46.103+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:46.100+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:33:46.219+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:33:46.282+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:46.281+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:33:46.339+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:46.339+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:33:46.366+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.303 seconds
+[2025-02-12T00:34:16.616+0000] {processor.py:186} INFO - Started process (PID=102) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:34:16.622+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:34:16.639+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:16.637+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:34:16.749+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:34:16.823+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:16.823+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:34:16.872+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:16.872+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:34:16.901+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.320 seconds
+[2025-02-12T00:34:47.886+0000] {processor.py:186} INFO - Started process (PID=109) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:34:47.889+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:34:47.910+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:47.907+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:34:48.022+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:34:48.173+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:48.172+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:34:48.220+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:48.219+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:34:48.253+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.427 seconds
+[2025-02-12T00:35:18.783+0000] {processor.py:186} INFO - Started process (PID=117) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:35:18.787+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:35:18.816+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:18.811+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:35:18.944+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:35:19.094+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:19.093+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:35:19.178+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:19.177+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:35:19.230+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.496 seconds
+[2025-02-12T00:35:49.834+0000] {processor.py:186} INFO - Started process (PID=127) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:35:49.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:35:49.878+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:49.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:35:50.194+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:35:50.331+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:50.331+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:35:50.429+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:50.428+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:35:50.456+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.664 seconds
+[2025-02-12T00:36:21.190+0000] {processor.py:186} INFO - Started process (PID=135) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:36:21.192+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:36:21.212+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:21.210+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:36:21.366+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:36:21.491+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:21.490+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:36:21.566+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:21.565+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:36:21.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.446 seconds
+[2025-02-12T00:36:52.194+0000] {processor.py:186} INFO - Started process (PID=143) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:36:52.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:36:52.216+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:52.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:36:52.332+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:36:52.470+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:52.470+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:36:52.530+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:52.530+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:36:52.571+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.420 seconds
+[2025-02-12T00:37:23.079+0000] {processor.py:186} INFO - Started process (PID=151) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:37:23.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:37:23.094+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:23.091+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:37:23.161+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:37:23.242+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:23.242+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:37:23.272+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:23.272+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:37:23.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.258 seconds
+[2025-02-12T00:37:54.075+0000] {processor.py:186} INFO - Started process (PID=158) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:37:54.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:37:54.169+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:54.159+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:37:54.683+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:37:54.841+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:54.840+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:37:54.990+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:54.990+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:37:55.035+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 1.098 seconds
+[2025-02-12T00:38:25.761+0000] {processor.py:186} INFO - Started process (PID=166) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:38:25.768+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:38:25.820+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:38:25.816+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:38:26.033+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:38:26.186+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:38:26.185+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:38:26.265+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:38:26.265+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:38:26.309+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.617 seconds
+[2025-02-12T00:43:07.242+0000] {processor.py:186} INFO - Started process (PID=174) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:43:07.249+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:43:07.262+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:43:07.261+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:43:07.289+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:43:07.337+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:43:07.337+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:43:07.388+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:43:07.388+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:43:07.422+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.210 seconds
+[2025-02-12T00:44:51.980+0000] {processor.py:186} INFO - Started process (PID=182) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:44:51.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:44:51.991+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:44:51.990+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:44:52.076+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:44:52.258+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:44:52.257+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:44:52.301+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:44:52.301+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:44:52.342+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.422 seconds
+[2025-02-12T00:45:22.852+0000] {processor.py:186} INFO - Started process (PID=190) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:45:22.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:45:22.861+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:45:22.860+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:45:22.898+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:45:22.958+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:45:22.957+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:45:22.987+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:45:22.987+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:45:23.007+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.162 seconds
+[2025-02-12T00:46:19.801+0000] {processor.py:186} INFO - Started process (PID=198) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:46:19.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:46:19.821+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:19.819+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:46:19.909+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:46:20.067+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:20.066+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:46:20.104+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:20.104+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:46:20.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.431 seconds
+[2025-02-12T00:46:57.679+0000] {processor.py:186} INFO - Started process (PID=206) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:46:57.686+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:46:57.695+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:57.695+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:46:57.762+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:46:57.824+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:57.822+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:46:57.851+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:57.851+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:46:57.879+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.243 seconds
+[2025-02-12T00:47:28.357+0000] {processor.py:186} INFO - Started process (PID=213) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:47:28.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:47:28.373+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:47:28.372+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:47:28.456+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:47:28.550+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:47:28.550+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:47:28.647+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:47:28.647+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:47:28.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.417 seconds
+[2025-02-12T00:48:56.873+0000] {processor.py:186} INFO - Started process (PID=216) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:48:56.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:48:56.989+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:48:56.987+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:48:57.165+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:48:57.333+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:48:57.331+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:48:57.420+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:48:57.420+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:48:57.521+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.698 seconds
+[2025-02-12T00:50:04.063+0000] {processor.py:186} INFO - Started process (PID=224) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:50:04.066+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:50:04.104+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:04.103+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:50:04.209+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:50:04.354+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:04.353+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:50:04.429+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:04.429+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:50:04.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.439 seconds
+[2025-02-12T00:50:35.389+0000] {processor.py:186} INFO - Started process (PID=232) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:50:35.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:50:35.470+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:35.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:50:35.632+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:50:35.951+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:35.950+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:50:36.051+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:36.051+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:50:36.148+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.852 seconds
+[2025-02-12T00:51:17.839+0000] {processor.py:186} INFO - Started process (PID=240) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:51:17.846+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:51:17.942+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:17.937+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:51:18.134+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:51:18.487+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:18.485+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:51:18.670+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:18.670+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:51:18.842+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 1.214 seconds
+[2025-02-12T00:51:50.231+0000] {processor.py:186} INFO - Started process (PID=247) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:51:50.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:51:50.294+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:50.290+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:51:50.539+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:51:50.667+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:50.666+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:51:50.750+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:50.750+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:51:50.814+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.709 seconds
+[2025-02-12T00:52:40.651+0000] {processor.py:186} INFO - Started process (PID=256) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:52:40.660+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:52:40.692+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:52:40.690+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:52:40.779+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:52:40.898+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:52:40.897+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:52:40.949+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:52:40.948+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:52:40.990+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.375 seconds
+[2025-02-12T00:53:27.109+0000] {processor.py:186} INFO - Started process (PID=263) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:53:27.112+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:53:27.122+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:27.121+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:53:27.191+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:53:27.281+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:27.280+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:53:27.331+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:27.330+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:53:27.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.308 seconds
+[2025-02-12T00:53:58.209+0000] {processor.py:186} INFO - Started process (PID=270) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:53:58.213+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T00:53:58.264+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:58.257+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:53:58.429+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T00:53:58.608+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:58.607+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:53:58.714+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:58.714+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T00:53:58.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 0.606 seconds
+[2025-02-12T01:14:33.197+0000] {processor.py:186} INFO - Started process (PID=279) to work on /opt/airflow/dags/read_sqlite.py
+[2025-02-12T01:14:33.206+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/read_sqlite.py for tasks to queue
+[2025-02-12T01:14:33.273+0000] {logging_mixin.py:190} INFO - [2025-02-12T01:14:33.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T01:14:33.689+0000] {processor.py:925} INFO - DAG(s) 'read_sqlite' retrieved from /opt/airflow/dags/read_sqlite.py
+[2025-02-12T01:14:34.089+0000] {logging_mixin.py:190} INFO - [2025-02-12T01:14:34.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T01:14:34.358+0000] {logging_mixin.py:190} INFO - [2025-02-12T01:14:34.357+0000] {dag.py:4180} INFO - Setting next_dagrun for read_sqlite to None, run_after=None
+[2025-02-12T01:14:34.545+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/read_sqlite.py took 1.406 seconds

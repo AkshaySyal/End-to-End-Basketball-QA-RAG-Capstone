@@ -1,0 +1,23 @@
+[2025-02-11T20:17:18.360+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-11T20:17:18.380+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: kaggle_to_s3_pipeline.download_kaggle_data manual__2025-02-11T20:17:15.172567+00:00 [queued]>
+[2025-02-11T20:17:18.387+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: kaggle_to_s3_pipeline.download_kaggle_data manual__2025-02-11T20:17:15.172567+00:00 [queued]>
+[2025-02-11T20:17:18.388+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 2
+[2025-02-11T20:17:18.398+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): download_kaggle_data> on 2025-02-11 20:17:15.172567+00:00
+[2025-02-11T20:17:18.408+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=92) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-11T20:17:18.410+0000] {standard_task_runner.py:72} INFO - Started process 93 to run task
+[2025-02-11T20:17:18.410+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'kaggle_to_s3_pipeline', 'download_kaggle_data', 'manual__2025-02-11T20:17:15.172567+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/s3_data.py', '--cfg-path', '/tmp/tmp7s7zkhx5']
+[2025-02-11T20:17:18.411+0000] {standard_task_runner.py:105} INFO - Job 73: Subtask download_kaggle_data
+[2025-02-11T20:17:18.481+0000] {task_command.py:467} INFO - Running <TaskInstance: kaggle_to_s3_pipeline.download_kaggle_data manual__2025-02-11T20:17:15.172567+00:00 [running]> on host e114761c8b9b
+[2025-02-11T20:17:18.594+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='kaggle_to_s3_pipeline' AIRFLOW_CTX_TASK_ID='download_kaggle_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-11T20:17:15.172567+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-11T20:17:15.172567+00:00'
+[2025-02-11T20:17:18.598+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-02-11T20:17:18.648+0000] {s3_data.py:27} INFO - Removing existing file: /opt/***/data/nba.sqlite
+[2025-02-11T20:17:18.649+0000] {s3_data.py:30} INFO - Downloading dataset wyattowalsh/basketball to /opt/***/data
+[2025-02-11T20:17:18.655+0000] {s3_data.py:38} ERROR - Download failed! /opt/***/data/nba.sqlite not found.
+[2025-02-11T20:17:18.655+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-11T20:17:18.671+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-02-11T20:17:18.671+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=kaggle_to_s3_pipeline, task_id=download_kaggle_data, run_id=manual__2025-02-11T20:17:15.172567+00:00, execution_date=20250211T201715, start_date=20250211T201718, end_date=20250211T201718
+[2025-02-11T20:17:18.722+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-11T20:17:18.779+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-11T20:17:18.781+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

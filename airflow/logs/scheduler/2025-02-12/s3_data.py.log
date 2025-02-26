@@ -1,0 +1,173 @@
+[2025-02-12T00:33:15.052+0000] {processor.py:186} INFO - Started process (PID=86) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:33:15.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:33:15.062+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:15.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:33:16.431+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:33:16.525+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:16.523+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:33:16.603+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:16.602+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:33:16.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.631 seconds
+[2025-02-12T00:33:47.067+0000] {processor.py:186} INFO - Started process (PID=95) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:33:47.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:33:47.069+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:47.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:33:47.242+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:33:47.278+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:47.278+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:33:47.315+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:33:47.314+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:33:47.346+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.283 seconds
+[2025-02-12T00:34:17.722+0000] {processor.py:186} INFO - Started process (PID=103) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:34:17.725+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:34:17.733+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:17.732+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:34:18.004+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:34:18.083+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:18.083+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:34:18.140+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:18.139+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:34:18.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.468 seconds
+[2025-02-12T00:34:48.285+0000] {processor.py:186} INFO - Started process (PID=110) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:34:48.286+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:34:48.288+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:48.288+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:34:48.602+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:34:48.641+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:48.640+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:34:48.670+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:34:48.670+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:34:48.690+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.412 seconds
+[2025-02-12T00:35:19.097+0000] {processor.py:186} INFO - Started process (PID=118) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:35:19.102+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:35:19.118+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:19.117+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:35:19.427+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:35:19.472+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:19.472+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:35:19.504+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:19.504+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:35:19.529+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.451 seconds
+[2025-02-12T00:35:49.834+0000] {processor.py:186} INFO - Started process (PID=126) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:35:49.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:35:49.878+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:49.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:35:50.563+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:35:50.583+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:50.583+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:35:50.618+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:35:50.617+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:35:50.651+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.858 seconds
+[2025-02-12T00:36:21.190+0000] {processor.py:186} INFO - Started process (PID=134) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:36:21.192+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:36:21.212+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:21.210+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:36:21.645+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:36:21.662+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:21.662+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:36:21.708+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:21.708+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:36:21.729+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.566 seconds
+[2025-02-12T00:36:52.194+0000] {processor.py:186} INFO - Started process (PID=142) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:36:52.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:36:52.216+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:52.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:36:52.600+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:36:52.627+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:52.627+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:36:52.659+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:36:52.659+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:36:52.680+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.535 seconds
+[2025-02-12T00:37:23.079+0000] {processor.py:186} INFO - Started process (PID=150) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:37:23.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:37:23.093+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:23.091+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:37:23.320+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:37:23.335+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:23.335+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:37:23.351+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:23.350+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:37:24.624+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.579 seconds
+[2025-02-12T00:37:55.044+0000] {processor.py:186} INFO - Started process (PID=159) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:37:55.046+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:37:55.048+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:55.047+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:37:55.277+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:37:55.296+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:37:55.296+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:38:01.095+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:38:01.091+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:38:01.135+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 6.115 seconds
+[2025-02-12T00:43:07.241+0000] {processor.py:186} INFO - Started process (PID=173) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:43:07.243+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:43:07.258+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:43:07.256+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:43:07.756+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:43:08.896+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:43:08.896+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:43:08.943+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:43:08.942+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:43:08.959+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.748 seconds
+[2025-02-12T00:44:51.980+0000] {processor.py:186} INFO - Started process (PID=176) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:44:51.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:44:51.991+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:44:51.990+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:44:52.469+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:44:52.496+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:44:52.496+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:44:52.543+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:44:52.543+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:44:52.562+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.642 seconds
+[2025-02-12T00:45:22.851+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:45:22.854+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:45:22.861+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:45:22.860+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:45:23.010+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:45:23.028+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:45:23.027+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:45:23.054+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:45:23.054+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:45:23.066+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.244 seconds
+[2025-02-12T00:46:19.801+0000] {processor.py:186} INFO - Started process (PID=197) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:46:19.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:46:19.821+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:19.819+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:46:20.164+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:46:20.200+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:20.199+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:46:21.317+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:21.317+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:46:21.336+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.611 seconds
+[2025-02-12T00:46:57.680+0000] {processor.py:186} INFO - Started process (PID=205) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:46:57.687+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:46:57.694+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:57.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:46:57.898+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:46:57.913+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:57.913+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:46:58.553+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:46:58.553+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:46:58.565+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.929 seconds
+[2025-02-12T00:47:28.755+0000] {processor.py:186} INFO - Started process (PID=214) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:47:28.757+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:47:28.759+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:47:28.758+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:47:28.901+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:47:30.258+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:47:30.258+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:47:30.300+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:47:30.300+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:47:30.323+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.584 seconds
+[2025-02-12T00:48:56.875+0000] {processor.py:186} INFO - Started process (PID=215) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:48:56.894+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:48:56.989+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:48:56.988+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:48:57.515+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:48:57.553+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:48:57.553+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:48:57.588+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:48:57.587+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:48:57.599+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.790 seconds
+[2025-02-12T00:50:04.063+0000] {processor.py:186} INFO - Started process (PID=223) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:50:04.066+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:50:04.105+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:04.099+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:50:04.481+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:50:04.498+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:04.498+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:50:04.521+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:04.521+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:50:04.536+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.509 seconds
+[2025-02-12T00:50:35.389+0000] {processor.py:186} INFO - Started process (PID=231) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:50:35.393+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:50:35.470+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:35.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:50:36.158+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:50:36.173+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:36.173+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:50:36.232+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:50:36.232+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:50:37.613+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 2.328 seconds
+[2025-02-12T00:51:17.846+0000] {processor.py:186} INFO - Started process (PID=239) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:51:17.868+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:51:17.942+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:17.936+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:51:18.836+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:51:18.929+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:18.929+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:51:21.005+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:21.002+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:51:21.050+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 3.431 seconds
+[2025-02-12T00:51:51.905+0000] {processor.py:186} INFO - Started process (PID=254) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:51:51.907+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:51:51.909+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:51.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:51:52.247+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:51:53.325+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:53.324+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:51:53.347+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:51:53.347+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:51:53.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.471 seconds
+[2025-02-12T00:52:40.651+0000] {processor.py:186} INFO - Started process (PID=255) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:52:40.655+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:52:40.692+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:52:40.688+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:52:41.481+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:52:41.515+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:52:41.515+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:52:41.532+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:52:41.532+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:52:41.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 0.929 seconds
+[2025-02-12T00:53:27.109+0000] {processor.py:186} INFO - Started process (PID=262) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:53:27.112+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:53:27.122+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:27.121+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:53:28.445+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:53:28.505+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:28.505+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:53:28.557+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:28.557+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:53:28.635+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.573 seconds
+[2025-02-12T00:53:58.800+0000] {processor.py:186} INFO - Started process (PID=271) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T00:53:58.801+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T00:53:58.803+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:58.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:53:59.047+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T00:53:59.148+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:59.147+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-12T00:53:59.262+0000] {logging_mixin.py:190} INFO - [2025-02-12T00:53:59.261+0000] {dag.py:4180} INFO - Setting next_dagrun for kaggle_to_s3_pipeline to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-12T00:54:00.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/s3_data.py took 1.687 seconds
+[2025-02-12T01:14:33.194+0000] {processor.py:186} INFO - Started process (PID=278) to work on /opt/airflow/dags/s3_data.py
+[2025-02-12T01:14:33.206+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/s3_data.py for tasks to queue
+[2025-02-12T01:14:33.287+0000] {logging_mixin.py:190} INFO - [2025-02-12T01:14:33.280+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/s3_data.py
+[2025-02-12T01:14:34.875+0000] {processor.py:925} INFO - DAG(s) 'kaggle_to_s3_pipeline' retrieved from /opt/airflow/dags/s3_data.py
+[2025-02-12T01:14:35.148+0000] {logging_mixin.py:190} INFO - [2025-02-12T01:14:35.146+0000] {dag.py:3239} INFO - Sync 1 DAGs
