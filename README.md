@@ -10,3 +10,4 @@ These are our technical goals for this project:
 - Apply Object-Oriented Design Principles to enhance code quality and maintainability for critical scripts (eg: Benchmarking Script)
 - Create an orchestration workflow to augment data and build a custom dataset for fine-tuning
 ## Setup Instruction
+Link to model weights: https://drive.google.com/drive/folders/1ocAiCka81Ug905IH7lMAHo9o73CMt-5o?usp=sharing
