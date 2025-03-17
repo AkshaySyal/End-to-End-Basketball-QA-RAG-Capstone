@@ -1,61 +1,27 @@
-import openai
-import os
-import re
+from database_connection import db_conn
 from dotenv import load_dotenv
+import os
+import pandas as pd
+
 load_dotenv()
 
-# Fetch API Key
-api_key = os.getenv("OPENAI_API_KEY")
-client = openai.OpenAI(api_key=api_key)
+#processing query with the user's input and model_choice
+def process_query(question, model_choice):
+    response = ""
+    if model_choice == 'Finetuned-Llama-3.2-3B':
+        response = finetuned_model(question)
+    elif model_choice == 'Llama-3.2-3B-instruct':
+        response = foundational_model(question)
+    else:
+        response = openai_llm(question)
+    return response 
 
-def clean_sql_query(sql_query):
-    """
-    Cleans the SQL query to remove unwanted formatting.
-    """
-    sql_query = re.sub(r"sql", "", sql_query, flags=re.IGNORECASE).strip()
-    sql_query = re.sub(r"", "", sql_query, flags=re.IGNORECASE).strip()
-    return sql_query.strip()
+def finetuned_model(question,model='Finetuned-Llama-3.2-3B'):
+    return "Not Implemented"
 
-def generate_sql_query(user_input):
-    database_schema = """ 
-    Table common_player_info:
-    - person_id (INTEGER, PRIMARY KEY)
-    - first_name (TEXT)
-    - last_name (TEXT)
-    - display_first_last (TEXT)
-    - team_name (TEXT)
-    - team_abbreviation (TEXT)
-    - position (TEXT)
-    - height (TEXT)
-    - weight (INTEGER)
-    - from_year (INTEGER)
-    - to_year (INTEGER)
-    - draft_year (INTEGER)
-    - draft_round (INTEGER)
-    - draft_number (INTEGER)
-    
-    The table contains player information, including their names, teams, positions, height, weight, draft details, and career span.
-    """
+def foundational_model(question,model='Llama-3.2-3B-instruct'):
+    return "Not Implemented"
 
-    prompt = f"""You are an AI that generates SQLite queries based on user input.
-    {database_schema}
-    
-    User Request:
-    {user_input}
-    
-    Generate an SQLite SELECT query that retrieves relevant data. Output ONLY the query, nothing else.
-    """
+def openai_llm(question,model="gpt-4-turbo"):
+    return "Not Implemented"
 
-    response = client.chat.completions.create(
-        model="gpt-4-turbo",
-        messages=[
-            {"role": "system", "content": "You generate SQLite queries based on a predefined schema. Return only valid SQL queries without explanation, markdown, or formatting."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.2,
-        max_tokens=150
-    )
-
-    raw_query = response.choices[0].message.content.strip()
-    sql_query = clean_sql_query(raw_query)  
-    return sql_query
