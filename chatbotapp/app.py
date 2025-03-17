@@ -5,7 +5,7 @@ from database_connection import run_query
 st.markdown(
     f"""
     <div style="display: flex; justify-content: space-between; align-items: left;">
-        <h1>Basketball Question Answering Chatbot</h1>
+        <h1>Basketball QA Chatbot</h1>
     </div>
     """,
     unsafe_allow_html=True,
