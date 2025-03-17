@@ -5,17 +5,17 @@ base_model_name = "unsloth/Llama-3.2-3B-Instruct"
 adapter_path = "/content/drive/MyDrive/Capstone Project Model Weights/best_model_r8_alpha8_dropout0.05_lr5e-05"  
 max_seq_length = 2048
 
-# Load base model
+#Load base model
 base_model, _ = FastLanguageModel.from_pretrained(
     model_name=base_model_name,
     max_seq_length=max_seq_length,
     load_in_4bit=True,
 )
 
-# Load trained adapter
+#Load trained adapter
 model = PeftModel.from_pretrained(base_model, adapter_path)
 
-# Load tokenizer from saved directory
+#Load tokenizer from saved directory
 tokenizer = AutoTokenizer.from_pretrained(adapter_path)
 
 ## Model Quantization
