@@ -72,15 +72,14 @@ def send_message():
     print(f"CHOICE: {choice}")
     
     # Process query and get response
-    model_response = process_query(question, choice)
-    result = run_query("select name from nba_roster where team='Golden State Warriors' and POS='PG';") 
+    generated_query,query_result = process_query(question, choice)
     response = f"""
     
     Generated Query: 
-    {model_response}
+    {generated_query}
     
     The answer to the question is: 
-    {result}
+    {query_result}
     """
     
     # Update chat history
