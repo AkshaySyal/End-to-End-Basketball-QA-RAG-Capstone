@@ -12,16 +12,16 @@ base_model, _ = FastLanguageModel.from_pretrained(
     load_in_4bit=True,
 )
 
-#Load trained adapter
+#Load trained adapter<br>
 model = PeftModel.from_pretrained(base_model, adapter_path)
 
-#Load tokenizer from saved directory
+#Load tokenizer from saved directory<br>
 tokenizer = AutoTokenizer.from_pretrained(adapter_path)
 
 ## Model Quantization
-
+#Model weights are 16-bit floating-point precision (FP16).<br>
 model.save_pretrained_gguf("model", tokenizer, quantization_method="not_quantized")
-#Model weights are 16-bit floating-point precision (FP16).
+
 
 ## Inference on ollama
 
