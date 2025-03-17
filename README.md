@@ -34,6 +34,8 @@ Notable hyperparameters:
 
 Experimented with 7 different versions of Modelfile, tried different hyperparameters like StopParameters. I also tried using adapter weights (safe tensors) along with model weights (gguf). But the inference quality was not good.
 
+Documentation: https://github.com/ollama/ollama/blob/main/docs/modelfile.md
+
 ```bash
 ollama create finetunedllama3.2ParamExp2 -f ./Modelfile_llama3.2
 ollama run finetunedllama3.2ParamExp2
