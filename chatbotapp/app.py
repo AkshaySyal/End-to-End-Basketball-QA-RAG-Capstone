@@ -73,7 +73,7 @@ def send_message():
     
     # Process query and get response
     model_response = process_query(question, choice)
-    result = "Something" #run_query(model_response)  # Assuming this returns the query result
+    result = run_query("select name from nba_roster where team='Golden State Warriors' and POS='PG';") #run_query(model_response)  
     response = f"""Generated Query: {model_response}\nThe answer to the question is: {result}"""
     
     # Update chat history
