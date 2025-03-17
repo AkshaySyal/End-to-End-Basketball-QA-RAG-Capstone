@@ -72,7 +72,8 @@ def send_message():
     print(f"CHOICE: {choice}")
     
     # Process query and get response
-    generated_query,query_result = process_query(question, choice)
+    print(process_query(question, choice))
+    generated_query,query_result = "dummy","dummy" #process_query(question, choice)
     response = f"""
     
     Generated Query: 
