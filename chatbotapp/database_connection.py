@@ -16,7 +16,9 @@ def db_conn():
 
 #Execute SQL query
 def run_query(sql_query):
-    q = sql_query.lower()
     engine = sqlite3.connect("chatbotapp/nba_roster_lower_case.db")
-    df = pd.read_sql(q, con=engine)
-    return df.to_string(index=False)
+    try:
+        df = pd.read_sql(sql_query, con=engine)
+        return df.to_string(index=False)
+    except Exception as e:
+        return f"""Generate Query did not execute."""
