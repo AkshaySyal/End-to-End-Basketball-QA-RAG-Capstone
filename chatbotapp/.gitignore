@@ -2,3 +2,4 @@
 nba_roster.db
 nba_database.db
 venv
+__pycache__
