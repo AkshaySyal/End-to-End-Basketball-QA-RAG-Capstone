@@ -5,3 +5,4 @@ python-dotenv
 streamlit
 huggingface_hub
 sqlalchemy
+pandas
