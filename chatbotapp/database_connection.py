@@ -16,8 +16,7 @@ def db_conn():
 
 #Execute SQL query
 def run_query(sql_query):
-    engine = sqlite3.connect(os.getenv('SQLITE_DB_PATH', 'nba_roster_lower_case.db'))
-    return pd.read_sql(sql_query, con=engine).to_string(index=False)
-    # db = db_conn()
-    # with db._engine.connect() as connection:
-    #     return connection.execute("select name from nba_roster where team='Golden State Warriors' and POS='PG';").fetchall()
+    q = sql_query.lower()
+    engine = sqlite3.connect("./nba_roster_lower_case.db")
+    df = pd.read_sql(q, con=engine)
+    return df.to_string(index=False)
