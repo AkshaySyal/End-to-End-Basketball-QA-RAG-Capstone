@@ -58,4 +58,7 @@ Model live at: https://5b33-2601-19b-e02-2da0-c46f-e889-1ca5-5f25.ngrok-free.app
 
 <img width="1025" alt="image" src="https://github.com/user-attachments/assets/9c6eaf90-5597-48bb-a76d-15cfb78a9127" />
 
+## Model Weights
+Link to model weights: https://drive.google.com/drive/folders/1ocAiCka81Ug905IH7lMAHo9o73CMt-5o?usp=sharing
+
 
