@@ -38,7 +38,7 @@ Experimented with 7 different versions of Modelfile, tried different hyperparame
 ollama create finetunedllama3.2ParamExp2 -f ./Modelfile_llama3.2
 ollama run finetunedllama3.2ParamExp2
 ```
-## Deploying on ngrok
+## Exposing public URL using ngrok
 ```bash
 ollama serve
 ngrok http 11434 --host-header=localhost
