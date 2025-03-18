@@ -1,4 +1,11 @@
 # End-to-End-Basketball-QA-RAG-Capstone
+## Install ngrok and ollama
+Install and sign up for ngrok <br>
+Get the authentication token <br>
+Run command
+```bash
+ngrok config add-authtoken <your token>
+```
 
 ## Loading the model
 base_model_name = "unsloth/Llama-3.2-3B-Instruct"
