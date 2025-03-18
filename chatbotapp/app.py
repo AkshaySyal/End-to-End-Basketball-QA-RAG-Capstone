@@ -22,7 +22,7 @@ prewritten_queries = [
     "What team is LaMelo Ball on?",
     "What is the number of players on the Chicago Bulls who are 25 years old or younger?",
     "Who is the pointguard for the Golden State Warriors?",
-    "How much does Lonzo Ball weigh?"
+    "What team has the smallest roster?"
 ]
 
 # Display example queries at the top
