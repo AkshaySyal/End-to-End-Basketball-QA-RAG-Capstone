@@ -44,7 +44,7 @@ Experimented with 7 different versions of Modelfile, tried different hyperparame
 Documentation: https://github.com/ollama/ollama/blob/main/docs/modelfile.md
 
 ```bash
-ollama create finetunedllama3.2ParamExp2 -f ./Modelfile_llama3.2
+ollama create finetunedllama3.2ParamExp2 -f ./Modelfile_llama3.2 #This command is used for Model registration. Ollama increases the file size during this process. So the model will need more GPU memory than its GGUF size.
 ollama run finetunedllama3.2ParamExp2
 ```
 ## Exposing public URL using ngrok
