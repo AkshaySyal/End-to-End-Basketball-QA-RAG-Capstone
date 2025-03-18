@@ -19,13 +19,17 @@ def process_query(question, model_choice):
     return response 
 
 def finetuned_model(question,model='Finetuned-Llama-3.2-3B'):
-    url = "https://ebcd-2601-19b-e02-2da0-ce2-94ff-bb12-1a09.ngrok-free.app/api/generate/"
+    url = "https://ebcd-2601-19b-e02-2da0-ce2-94ff-bb12-1a09.ngrok-free.app/api/generate"
+    headers = {
+        "Content-Type": "application/json",
+        "ngrok-skip-browser-warning": "true"  # Add this header
+    }
     payload = {
         "model": "finetunedllama3.2QuantizedExp1",
         "prompt": question,
         "stream": False
     }
-    response = requests.post(url, json=payload)
+    response = requests.post(url, json=payload,headers=headers)
     if response.status_code == 200:
         data = response.json()
         model_response = data["response"]
