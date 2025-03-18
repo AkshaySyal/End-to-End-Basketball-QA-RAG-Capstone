@@ -27,7 +27,6 @@ prewritten_queries = [
     "What is the number of players on the Chicago Bulls who are 25 years old or younger?",
     "Who is the pointguard for the Golden State Warriors?",
     "What team has the smallest roster?",
-    "What's the average age of the Trail Blazers?"
 ]
 
 # Display example queries at the top
