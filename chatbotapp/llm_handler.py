@@ -25,7 +25,7 @@ def finetuned_model(question,model='Finetuned-Llama-3.2-3B'):
         "ngrok-skip-browser-warning": "true"  # Add this header
     }
     payload = {
-        "model": "finetunedllama3.2QuantizedExp1",
+        "model": "finetunedllama3.2QuantizedExp2",
         "prompt": question,
         "stream": False
     }
