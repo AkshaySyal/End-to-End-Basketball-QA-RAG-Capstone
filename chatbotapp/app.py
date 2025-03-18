@@ -74,11 +74,15 @@ def send_message():
     
     # Process query and get response
     # st.write(process_query(question, choice))
-    generated_query,query_result = process_query(question, choice)
+    model_response,generated_query,query_result = process_query(question, choice)
+    
     response = f"""
     
     Generated Query: 
     {generated_query}
+
+    Model Response:
+    {model_response}
     
     The answer to the question is: 
     {query_result}
