@@ -118,7 +118,7 @@ st.markdown(
     }
     /* Increase the width of the selectbox */
     div[data-testid="stSelectbox"] {
-        width: 200px !important;
+        width: 250px !important;
     }
     </style>
     """,
