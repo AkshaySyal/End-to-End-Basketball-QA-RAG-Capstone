@@ -39,7 +39,7 @@ def finetuned_model(question,model='Finetuned-Llama-3.2-3B'):
         sql_query = f"Request failed with status code: {response.status_code}"
         query_result = "NA"
     
-    return sql_query,query_result
+    return model_response,sql_query,query_result
 
 def foundational_model(question,model='Llama-3.2-3B-instruct'):
     return "Not Implemented"
