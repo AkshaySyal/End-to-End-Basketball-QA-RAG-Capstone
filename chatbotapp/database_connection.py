@@ -21,4 +21,4 @@ def run_query(sql_query):
         df = pd.read_sql(sql_query, con=engine)
         return df.to_string(index=False)
     except Exception as e:
-        return f"""Generate Query did not execute."""
+        return f"""Generated Query did not execute."""
