@@ -1,6 +1,10 @@
 import streamlit as st
 from llm_handler import process_query
 from database_connection import run_query
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 st.markdown(
     f"""
@@ -76,13 +80,12 @@ def send_message():
     # st.write(process_query(question, choice))
     model_response,generated_query,query_result = process_query(question, choice)
     
+    logger.info(f"MODEL RESPONSE: {model_response}")
+    
     response = f"""
     
     Generated Query: 
     {generated_query}
-
-    Model Response:
-    {model_response}
     
     The answer to the question is: 
     {query_result}
