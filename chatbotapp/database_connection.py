@@ -9,7 +9,7 @@ load_dotenv()
 
 #establishing database connection
 def db_conn():
-    sqlite_path = os.getenv('SQLITE_DB_PATH', 'nba_roster_lower_case.db') #default path
+    sqlite_path = os.getenv('SQLITE_DB_PATH', 'nba_roster_lower_case (1).db') #default path
     DB_URL = f"sqlite:///{sqlite_path}"
     return SQLDatabase.from_uri(DB_URL)
 
