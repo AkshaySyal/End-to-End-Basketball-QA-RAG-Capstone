@@ -82,10 +82,6 @@ def send_message():
     logger.info(f"MODEL RESPONSE: {model_response}")
     
     response = f"""
-
-    Model Response:
-    {model_response}
-    
     Generated Query: 
     {generated_query}
     
