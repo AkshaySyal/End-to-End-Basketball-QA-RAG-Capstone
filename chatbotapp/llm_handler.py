@@ -26,6 +26,7 @@ def finetuned_model(question,model='Finetuned-Llama-3.2-3B'):
     }
     payload = {
         "model": "finetunedllama3.2QuantizedExp4",
+        "keep_alive": -1,
         "prompt": question,
         "stream": False
     }
