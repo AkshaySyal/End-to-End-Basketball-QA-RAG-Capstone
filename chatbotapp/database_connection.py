@@ -16,7 +16,7 @@ def db_conn():
 
 #Execute SQL query
 def run_query(sql_query):
-    engine = sqlite3.connect("chatbotapp/nba_roster_lower_case.db")
+    engine = sqlite3.connect("chatbotapp/nba_roster_lower_case (1).db")
     try:
         df = pd.read_sql(sql_query, con=engine)
         return df.to_string(index=False)
