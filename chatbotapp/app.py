@@ -23,10 +23,10 @@ if "model_choice" not in st.session_state:
 
 # Prewritten example queries
 prewritten_queries = [
-    "What team is LaMelo Ball on?",
-    "What is the number of players on the Chicago Bulls who are 25 years old or younger?",
-    "Who is the pointguard for the Golden State Warriors?",
-    "What team has the smallest roster?",
+    "What team is LaMelo Ball on? Ans: Charlotte Hornets",
+    "What is the number of players on the Chicago Bulls who are 25 years old or younger? Ans: 10",
+    "Who is the pointguard for the Golden State Warriors? Ans: Stephen Curry, Chris Paul, and Cory Joseph",
+    "What team has the smallest roster? Ans: Brooklyn Nets",
 ]
 
 # Display example queries at the top
