@@ -43,8 +43,8 @@ for i in range(len(prewritten_queries)):
     with col1:
         st.markdown(f"📌 `{prewritten_queries[i]}` Ans: `{prewritten_queries_answers[i]}`") 
     with col2:
-        if st.button("📋", key=query, help="Copy to input box"):
-            st.session_state["user_input"] = query  # Set in session state
+        if st.button("📋", key=prewritten_queries[i], help="Copy to input box"):
+            st.session_state["user_input"] = prewritten_queries[i]  # Set in session state
 
 # Chat container with scrolling
 chat_container = st.container()
