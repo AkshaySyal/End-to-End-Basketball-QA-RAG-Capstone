@@ -37,7 +37,7 @@ prewritten_queries_answers = [
 
 
 # Display example queries at the top
-st.markdown("#### Try These Example Queries:\nPress paste button to paste queries in input field")
+st.markdown("#### Try These Example Queries:\nTap copy button to fill the query in input field")
 for i in range(len(prewritten_queries)):
     col1, col2 = st.columns([3, 1])
     with col1:
