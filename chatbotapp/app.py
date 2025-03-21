@@ -23,18 +23,25 @@ if "model_choice" not in st.session_state:
 
 # Prewritten example queries
 prewritten_queries = [
-    "What team is LaMelo Ball on? Ans: Charlotte Hornets",
-    "What is the number of players on the Chicago Bulls who are 25 years old or younger? Ans: 10",
-    "Who is the pointguard for the Golden State Warriors? Ans: Stephen Curry, Chris Paul, and Cory Joseph",
-    "What team has the smallest roster? Ans: Brooklyn Nets",
+    "What team is LaMelo Ball on?",
+    "What is the number of players on the Chicago Bulls who are 25 years old or younger?",
+    "Who is the pointguard for the Golden State Warriors?",
+    "What team has the smallest roster?",
 ]
+prewritten_queries_answers = [
+   "Charlotte Hornets",
+    "10",
+    "Stephen Curry, Chris Paul, and Cory Joseph",
+    "Brooklyn Nets",   
+]
+
 
 # Display example queries at the top
 st.markdown("#### Try These Example Queries:")
-for query in prewritten_queries:
+for i in range(len(prewritten_queries)):
     col1, col2 = st.columns([3, 1])
     with col1:
-        st.markdown(f"📌 `{query}`") 
+        st.markdown(f"📌 `{prewritten_queries[i]}` Ans: `{prewritten_queries_answers[i]}`") 
     with col2:
         if st.button("📋", key=query, help="Copy to input box"):
             st.session_state["user_input"] = query  # Set in session state
