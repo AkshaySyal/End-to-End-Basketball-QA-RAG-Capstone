@@ -146,7 +146,7 @@ with st.container():
     with col2:
         model_choice = st.selectbox(
             "Model", 
-            ("Finetuned-Llama-3.2-3B","OpenAI", "Llama-3.2-3B-instruct"), 
+            ("Finetuned-Llama-3.2-3B"), 
             key="model_choice"
         )
         st.button("Send", on_click=send_message)
