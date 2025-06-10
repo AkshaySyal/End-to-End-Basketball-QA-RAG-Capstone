@@ -19,7 +19,7 @@ def process_query(question, model_choice):
     return response 
 
 def finetuned_model(question,model='Finetuned-Llama-3.2-3B'):
-    url = "https://3e8f-2601-19b-e02-2da0-7428-1434-22c9-4885.ngrok-free.app/api/generate"
+    url = "https://6df8-2601-19b-e02-2da0-5c90-1282-daac-e6e2.ngrok-free.app/api/generate"
     headers = {
         "Content-Type": "application/json",
         "ngrok-skip-browser-warning": "true"  # Add this header
