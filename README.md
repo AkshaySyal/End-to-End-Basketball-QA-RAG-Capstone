@@ -3,7 +3,7 @@
 ## Project description
 This project aims to democratize basketball analytics by addressing the challenges non-technical users face when working with complex datasets due to limited SQL expertise. By developing a fine-tuned LLM-powered system, the project simplifies SQL query generation, ensuring accurate and consistent data-driven insights. The ultimate goal is to make analytics accessible, enabling better coaching strategies, player evaluations, and fan engagement while tackling key issues like LLM hallucinations and inconsistencies.
 
-Project link: https://akshaysyal-end-to-end-basketball-qa-rag-c-chatbotappapp-tgfmap.streamlit.app/
+Project link: https://akshaysyal-end-to-end-basketball-qa-rag-c-chatbotappapp-tgfmap.streamlit.app/ <br>
 Project Presentation: https://docs.google.com/presentation/d/1uFcptlnXr7_zXIwQ35wKjbzXAK7Y4Tn1hrhLyzUOe2Y/edit?usp=sharing
 
 ## Project Architecture
