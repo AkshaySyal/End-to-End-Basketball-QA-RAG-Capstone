@@ -10,6 +10,10 @@ Project Presentation: https://docs.google.com/presentation/d/1uFcptlnXr7_zXIwQ35
 
 ![My Image](architecture.png)
 
+## Model Accuracy Comparison
+<img width="854" height="542" alt="image" src="https://github.com/user-attachments/assets/a1fc542b-0444-4330-a9b7-76b302a50958" />
+
+
 
 ## Purpose 
 These are our technical goals for this project:
